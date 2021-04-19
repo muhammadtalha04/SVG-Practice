@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="style.css" />
+
+	<title>Pattern</title>
+</head>
+
+<body>
+
+	<svg id="svg-container">
+		<defs>
+			<pattern id="pat" viewBox="0,0,10,10" width="3%" height="3%">
+				<circle cx="5" cy="5" r="4" fill="black" />
+			</pattern>
+		</defs>
+
+
+		<!-- Rectangle -->
+		<rect x="40" y="40" width="420" height="420" stroke="url(#pat)" stroke-width="30" fill="red" />
+	</svg>
+
+</body>
+
+</html>

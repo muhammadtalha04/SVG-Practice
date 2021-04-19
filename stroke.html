@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="style.css" />
+
+	<title>Stroke</title>
+</head>
+
+<body>
+
+	<svg id="svg-container">
+		<!-- Simple stroke -->
+		<text x="10" y="40" stroke="black">Text with stroke</text>
+
+		<text x="10" y="80" stroke="black" fill="red" id="text-stroke-fill">Text with stroke and fill</text>
+
+		<!-- Stroke width -->
+		<line x1="10" y1="120" x2="400" y2="120" stroke="red" stroke-width="1" />
+		<line x1="10" y1="140" x2="400" y2="140" stroke="red" stroke-width="5" />
+
+		<!-- Stroke dasharray -->
+		<line x1="10" y1="160" x2="400" y2="160" stroke="red" stroke-width="5" stroke-dasharray="20,10, 5,10" />
+
+		<!-- Linecap -->
+		<line x1="10" y1="200" x2="300" y2="200" stroke="red" stroke-width="10" stroke-linecap="round" />
+		<text x="310" y="200" stroke="black">Round linecap</text>
+
+		<line x1="10" y1="220" x2="300" y2="220" stroke="red" stroke-width="10" stroke-linecap="square" />
+		<text x="310" y="220" stroke="black">Square linecap</text>
+	</svg>
+
+</body>
+
+</html>

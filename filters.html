@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="style.css" />
+
+	<title>Filters</title>
+</head>
+
+<body>
+
+	<svg id="svg-container">
+		<defs>
+			<filter id="f1" x="0" y="0">
+				<feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+			</filter>
+		</defs>
+		<rect x="40" y="40" width="90" height="90" stroke="black" stroke-width="3" fill="red" filter="url(#f1)" />
+	</svg>
+
+</body>
+
+</html>

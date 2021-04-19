@@ -1,0 +1,9 @@
+#svg-container {
+    border: 1px solid rgba(0,0,0,0.4);
+    width: 500px;
+    height: 500px;
+}
+
+#text-stroke-fill {
+    font-size: 18pt;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="style.css" />
+
+	<title>Linking and Interactivity</title>
+</head>
+
+<body>
+
+	<svg id="svg-container">
+		<!-- Link -->
+		<a xlink:href="https://www.google.com">
+			<text x="40" y="40" fill="blue">Click this open google.com</text>
+		</a>
+
+		<!-- Interactivity -->
+		<script type="text/javascript">
+			function changeColor() {
+				let elem = document.getElementById('rect');
+
+				if (elem.style.fill == "yellow") {
+					elem.style.fill = "red";
+				} else {
+					elem.style.fill = "yellow";
+				}
+			}
+		</script>
+		<rect x="80" y="100" width="300" height="230" fill="red" stroke="black" id="rect" onClick="changeColor()" />
+		<text x="80" y="360" fill="black">Click the rectangle to change color</text>
+	</svg>
+
+</body>
+
+</html>
